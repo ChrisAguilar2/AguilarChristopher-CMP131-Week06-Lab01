@@ -1,53 +1,29 @@
-# CMP 131 – AI Use Report
+# CMP 131 AI Use Report
 
 ## Student Information
-
-- Student name:
-- Week:
-- Lab:
-- Date:
+- Student name: Christopher Aguilar
+- Week: 6
+- Lab: 1
+- Date: October 7, 2026
 
 ## AI Use
-
-Did you use an AI tool for this lab?
-
-- [ ] Yes
+- [x] Yes
 - [ ] No
 
-If yes, complete the sections below. If no, write “No AI tool was used” under Summary.
-
 ## Tool Used
-
-Examples: GitHub Copilot, ChatGPT, Microsoft Copilot, or another tool.
-
-Tool:
+ChatGPT and Codex. Earlier GitHub Copilot use has not been confirmed.
 
 ## Assistance Requested
-
-Describe what you asked the AI tool to help you understand or troubleshoot.
-
-Response:
+I requested help with Git commit and push, code review, testing, and preparing my Word submission. After the review identified errors, I asked Codex to fix them all.
 
 ## How I Used the Assistance
-
-Explain which suggestions you used, changed, or rejected. Do not paste an entire AI conversation.
-
-Response:
+Codex configured my repository commit identity, and I pushed my original files. Codex then corrected the discount boundaries, prevented invalid quantities from reaching calculations, corrected Package C to $69.99, added complete bill details and monetary formatting, moved the menu before input, and added section comments. It also added try/except handling so noninteger input produces an error message instead of a traceback. These code corrections were made by AI at my request. I am responsible for reviewing and understanding them.
 
 ## Testing and Verification
-
-Explain how you tested the code and confirmed that the AI assistance was accurate.
-
-Response:
+Codex ran 32 tests against the corrected programs, including all 12 required assignment tests, discount boundaries, included-minute boundaries, zero and negative values, invalid packages, and noninteger input. All checks passed. Valid outputs included the required totals and formatted money to two decimal places. Invalid inputs printed error messages, produced no purchase total or bill, and ended without a traceback. These tests were run by Codex.
 
 ## What I Learned
-
-Describe one concept or programming skill you understand better after completing the lab.
-
-Response:
+[Add one concept you personally learned after reviewing the corrections.]
 
 ## Summary
-
-Provide any additional information about your use of AI for this lab.
-
-Response:
+AI assisted with Git setup, debugging and code changes, testing, and submission preparation. [Confirm any earlier AI help used to write the original Week 6 programs.] I must be able to explain the corrected code before submitting it.

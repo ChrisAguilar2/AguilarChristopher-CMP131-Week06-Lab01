@@ -1,36 +1,44 @@
-#Christopher Aguilar
-#CMP 131
-#Week 6
-#Lab 1
-#software discord
-#10/1/26
+# Student name: Christopher Aguilar
+# Course: CMP 131
+# Week: 6
+# Lab: 1
+# Assignment: Software Quantity Discount
+# Date: 10/1/26
 
-software_purchase = int(input("Enter the amount of software units purchased:"))
-original_cost = software_purchase * 99
-
-if (software_purchase <= 0):
-    print("ERROR")
-elif (10 > software_purchase and software_purchase > 0):
-    print("No Discount")
-    discount_rate = 0.0
-elif (10< software_purchase and software_purchase <19):
-    discount_rate = .20
-elif (20< software_purchase and software_purchase <49):
-    discount_rate = .30
-elif (50< software_purchase and software_purchase <99):
-    discount_rate = .40
+# Display the program title and collect an integer quantity.
+print("====== Software Quantity Discount ======")
+try:
+    software_purchase = int(input("Enter the number of software units purchased: "))
+except ValueError:
+    print("ERROR: Enter a whole number of units.")
 else:
-    discount_rate = .50
+    # Reject invalid quantities before calculating a purchase total.
+    if software_purchase <= 0:
+        print("ERROR: The number of units must be greater than zero.")
+    else:
+        # Select exactly one discount rate for every valid quantity.
+        if software_purchase < 10:
+            discount_rate = 0.0
+        elif software_purchase < 20:
+            discount_rate = 0.20
+        elif software_purchase < 50:
+            discount_rate = 0.30
+        elif software_purchase < 100:
+            discount_rate = 0.40
+        else:
+            discount_rate = 0.50
 
-discount_amount = original_cost * discount_rate
-final_cost = original_cost - discount_amount
+        # Calculate the original cost, discount, and final cost.
+        price_per_unit = 99.00
+        original_cost = software_purchase * price_per_unit
+        discount_amount = original_cost * discount_rate
+        final_cost = original_cost - discount_amount
 
-print("==============================")
-print("-----------Outcome------------")
-print("Amount of software purchased:",software_purchase)
-print("Price per Unit is $99.00")
-print("Original Cost:$", original_cost)
-print("Rate of discount:", discount_rate,'%')
-print("Amount of money discounted:$", discount_amount)
-print("Final cost:$", final_cost)
-print("===============================")
+        # Display the complete purchase report with monetary formatting.
+        print("============= Purchase Report =============")
+        print("Units purchased:", software_purchase)
+        print(f"Price per unit: ${price_per_unit:.2f}")
+        print(f"Original cost: ${original_cost:.2f}")
+        print(f"Discount percentage: {discount_rate:.0%}")
+        print(f"Discount amount: ${discount_amount:.2f}")
+        print(f"Final purchase cost: ${final_cost:.2f}")

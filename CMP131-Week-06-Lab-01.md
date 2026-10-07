@@ -216,8 +216,7 @@ A mobile phone service provider offers three subscription packages.
 
 * Monthly charge: `$39.99`
 * Included minutes: `450`
-* Additional minutes: `$0.45` per minute
-
+* Additional minutes: `$045` per minute
 ### Package B
 
 * Monthly charge: `$59.99`
